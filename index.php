@@ -1,18 +1,11 @@
-<!--
-
-    @author: Mert Basar, Carlos Rodriguez
-
--->
-
+<!-- @author: Mert Basar, Carlos Rodriguez -->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
         <?php require 'parameter.php' ?>
-        <title>MedienWeb</title>
-        
-        
+        <title>MediaWebServer</title>
     </head>
     <?php require 'mysql.php'; ?>
     <body>

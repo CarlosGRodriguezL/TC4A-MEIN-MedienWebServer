@@ -10,11 +10,12 @@
     <body>
         <div>
             <?php
-            $id = $_GET['id'];
-            $videoid = $id;
-            $videosrc = getVideo($id, $con);
+                $id = $_GET['id'];
+                $row = getBild($id, $con);
+                $bildsrc = $row['src'];
             ?>
             
+            <img src="<?php echo $bildsrc; ?>" />
         </div>
     </body>
 </html>
