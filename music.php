@@ -17,8 +17,8 @@
             
             ?>
             <audio controls>
-                <source src="horse.ogg" type="<?php echo $musiksrc ?>">
-                <source src="horse.mp3" type="audio/mpeg">
+                <source src="<?php echo $musiksrc ?>" type="audio/ogg">
+                <source src="<?php echo $musiksrc ?>" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
