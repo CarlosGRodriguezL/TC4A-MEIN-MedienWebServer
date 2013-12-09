@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4.1
+-- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 09. Dez 2013 um 21:25
--- Server Version: 5.6.11
--- PHP-Version: 5.5.3
+-- Erstellungszeit: 09. Dez 2013 um 23:01
+-- Server Version: 5.5.27
+-- PHP-Version: 5.4.7
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Datenbank: `mediaweb`
 --
-CREATE DATABASE IF NOT EXISTS `mediaweb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `mediaweb`;
 
 -- --------------------------------------------------------
 
@@ -41,8 +39,8 @@ CREATE TABLE IF NOT EXISTS `bild` (
 --
 
 INSERT INTO `bild` (`ID`, `Name`, `Beschreibung`, `src`) VALUES
-(1, 'Skorpion', 'Von Mortal Kombat', '/bild/skorpion.jpg'),
-(2, 'Tricky', 'Verkleidete Kinder', '/bild/tricky.jpg');
+(1, 'Skorpion', 'Von Mortal Kombat', './bild/scorpion.jpg'),
+(2, 'Tricky', 'Verkleidete Kinder', './bild/tricky.jpg');
 
 -- --------------------------------------------------------
 
@@ -70,14 +68,16 @@ CREATE TABLE IF NOT EXISTS `video` (
   `Beschreibung` varchar(99) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `src` varchar(99) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Daten für Tabelle `video`
 --
 
 INSERT INTO `video` (`ID`, `Name`, `Beschreibung`, `src`) VALUES
-(1, 'Iron Sky', 'Cooler Film', './video/ironsky.mp4');
+(1, 'Iron Sky (2012)', 'Cooler Film', './video/ironsky.mp4'),
+(2, 'Der Hobbit 2 (2014)', 'Erwartungen nicht getroffen', './video/DerHobbit2.mp4'),
+(3, 'Elysium (2013)', 'Mal was anderes', './video/elysium.mp4');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
