@@ -31,7 +31,7 @@
     <?php // Print function
     function getArray($select, $result, $type) {
         while($row = mysqli_fetch_array($result)) {
-            echo "<a href='" . $type . ".php?id=" . $row["ID"] . "'>" . $row["$select"] . "</a><br/>";
+            echo "<a href='" . $type . ".php?id=" . $row["ID"] . "'>" . $row["$select"] . "</a><p>" . $row['Beschreibung'] . "</p>";
         }
     }
     ?>
