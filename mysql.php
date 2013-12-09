@@ -38,9 +38,9 @@
 
     <?php // Get video function
     function getVideo($id, $con){
-        $result = mysqli_query($con, "SELECT src FROM video WHERE id = " . $id);
+        $result = mysqli_query($con, "SELECT * FROM video WHERE id = " . $id);
         $row = mysqli_fetch_array($result);
-        return $row['src'];
+        return $row;
     }
     ?>
     

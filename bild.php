@@ -12,15 +12,9 @@
             <?php
             $id = $_GET['id'];
             $videoid = $id;
-            $row = getVideo($id, $con);
-            $videosrc = $row['src'];
-            
+            $videosrc = getVideo($id, $con);
             ?>
-            <video id="<?php echo $videoid; ?>" class="video-js vjs-default-skin"
-                controls preload="auto" width="640" height="264"
-                data-setup='{"example_option":true}'>
-                <source src="<?php echo $videosrc; ?>" type='video/mp4' />
-            </video>
+            
         </div>
     </body>
 </html>
