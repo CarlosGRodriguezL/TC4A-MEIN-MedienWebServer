@@ -43,4 +43,12 @@
         return $row;
     }
     ?>
+
+    <?php // Get video function
+    function getMusik($id, $con){
+        $result = mysqli_query($con, "SELECT * FROM music WHERE id = " . $id);
+        $row = mysqli_fetch_array($result);
+        return $row;
+    }
+    ?>
     
